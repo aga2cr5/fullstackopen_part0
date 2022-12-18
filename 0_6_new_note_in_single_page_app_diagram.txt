@@ -1,0 +1,17 @@
+note over browser:
+when the form is submitted, the browser processes the form
+and updates the page accordingly. after this the browser makes
+a post request to the server and sends the form data there
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+browser sent payload, for example:
+{
+  "content": "grd",
+  "date": "2022-12-18T14:30:43.701Z"
+}
+end note
+
+server-->browser: {"message":"note created"}
